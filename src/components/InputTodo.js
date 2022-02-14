@@ -1,14 +1,13 @@
-import React, { Component } from "react"
+import React, { Component } from 'react';
 
 class InputTodo extends Component {
-
   state = {
-    title: ""
+    title: '',
   };
 
-  onChange = e => {
+  onChange = (e) => {
     this.setState({
-      title: e.target.value
+      title: e.target.value,
     });
   };
 
@@ -19,11 +18,12 @@ class InputTodo extends Component {
           type="text"
           placeholder="Add Todo..."
           value={this.state.title}
-          onChange={this.onChange} />
+          onChange={this.onChange}
+        />
 
         <button>Submit</button>
       </form>
-    )
+    );
   }
 }
-export default InputTodo
+export default InputTodo;

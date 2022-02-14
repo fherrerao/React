@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 function TodoItem(props) {
   return (
@@ -6,7 +6,8 @@ function TodoItem(props) {
       <input
         type="checkbox"
         checked={props.todo.completed}
-        onChange={() => props.handleChangeProps(props.todo.id)} />
+        onChange={() => props.handleChangeProps(props.todo.id)}
+      />
 
       {props.todo.title}
 
@@ -14,7 +15,7 @@ function TodoItem(props) {
         Delete
       </button>
     </li>
-  )
+  );
 }
 
-export default TodoItem
+export default TodoItem;

@@ -1,55 +1,51 @@
-import React from "react"
-import TodosList from "./TodosList"
-import Header from "./Header"
-import InputTodo from "./InputTodo";
+import React from 'react';
+import TodosList from './TodosList';
+import Header from './Header';
+import InputTodo from './InputTodo';
 
 class TodoContainer extends React.Component {
   state = {
     todos: [
       {
         id: 1,
-        title: "Setup development environment",
-        completed: true
+        title: 'Setup development environment',
+        completed: true,
       },
       {
         id: 2,
-        title: "Develop website and add content",
-        completed: false
+        title: 'Develop website and add content',
+        completed: false,
       },
       {
         id: 3,
-        title: "Deploy to live server",
-        completed: false
-      }
-    ]
+        title: 'Deploy to live server',
+        completed: false,
+      },
+    ],
   };
 
   handleChange = (id) => {
-    this.setState(prevState => {
-      return {
-        todos: prevState.todos.map(todo => {
-          if (todo.id === id) {
-            return {
-              ...todo,
-              completed: !todo.completed,
-            }
-          }
-          return todo
-        }),
-      }
-    })
-    console.log("clicked", id);
+    this.setState((prevState) => ({
+      todos: prevState.todos.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            completed: !todo.completed,
+          };
+        }
+        return todo;
+      }),
+    }));
+    console.log('clicked', id);
   };
 
-  delTodo = id => {
+  delTodo = (id) => {
     this.setState({
       todos: [
-        ...this.state.todos.filter(todo => {
-          return todo.id !== id;
-        })
-      ]
-    })
-    console.log("deleted", id);
+        ...this.state.todos.filter((todo) => todo.id !== id),
+      ],
+    });
+    console.log('deleted', id);
   };
 
   render() {
@@ -60,9 +56,10 @@ class TodoContainer extends React.Component {
         <TodosList
           todos={this.state.todos}
           handleChangeProps={this.handleChange}
-          deleteTodoProps={this.delTodo} />
+          deleteTodoProps={this.delTodo}
+        />
       </div>
-    )
+    );
   }
 }
-export default TodoContainer
+export default TodoContainer;
