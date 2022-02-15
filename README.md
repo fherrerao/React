@@ -3,6 +3,7 @@
 # To-do list
 
 > To-do list is an App built in React, where you could add, delete and update a task.
+![todoReact](https://user-images.githubusercontent.com/91301423/154083359-edd1b704-0e7d-47bf-abdb-a3f6479eef57.png)
 
 ## Built With
 
