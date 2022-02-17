@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://fherrerao.github.io/Math-magician/)
+[Live Demo Link](https://fherrerao.github.io/React-Todo/)
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Clone this repository with git clone `https://github.com/fherrerao/React-Todo.git` using your terminal or command line.
 - Change to the project directory by entering : <br>
-`cd Math-magician` in the terminal
+`cd React-Todo` in the terminal.
 
 ### Prerequisites
 
