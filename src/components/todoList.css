@@ -1,0 +1,25 @@
+.d-flex {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.input-container {
+  width: auto;
+}
+
+.description {
+  width: 40rem;
+}
+
+button {
+  padding: 0.3rem;
+}
