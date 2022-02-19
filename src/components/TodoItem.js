@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function TodoItem({ todo, handleChangeProps, deleteTodoProps }) {
   return (
-    <li>
+    <li className="d-flex">
       <input
         className="input-container"
         type="checkbox"

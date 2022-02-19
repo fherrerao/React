@@ -1,9 +1,12 @@
+.d-flex {
+  display: flex;
+}
+
 ul {
   list-style: none;
 }
 
 li {
-  display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 1rem;
